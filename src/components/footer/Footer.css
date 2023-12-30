@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+footer .footer {
+    margin-top: 60px;
+    padding: 115px 0px 50px 0px;
+    background-color: #000000;
+}
+
+.footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+}
+
+.footer-content .footer-links {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 53px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-socials i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.footer-socials i:active {
+    scale: .9;
+    background-color: orange;
+}
+
+.footer-author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-author span {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+}

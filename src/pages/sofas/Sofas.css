@@ -1,0 +1,139 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+.sofas-title {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    padding-bottom: 20px;
+}
+
+.sofas-title .sofas-title-text {
+    padding-top: 123px;
+    font-size: 48px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.sofas-content {
+    display: flex;
+    gap: 70px;
+}
+
+.sofas-filter-menu-title h3 {
+    width: 200px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 48px;
+}
+
+.sofas-filter-menu {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid rgba(0, 0, 0, 0.3);
+    padding-right: 150px;
+    padding-top: 50px;
+}
+
+.sofas-filter-menu .sofas-filter-menu-price {
+    display: flex;
+    gap: 14px;
+    flex-direction: column;
+    position: fixed;
+    top: 300px;
+}
+
+.sofas-filter-menu-price label {
+    font-size: 24px;
+    padding-top: 80px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: grey;
+}
+
+.sofas-filter-menu-price .range {
+    width: 180px;
+    outline: none;
+}
+
+.sofas-cards {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding-top: 50px;
+}
+
+.sofas-card {
+    width: 340px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    background: linear-gradient(#f5f5f5, #e5e5e5);
+}
+
+.sofas-card-section-one img {
+    width: 338px;
+    height: 180px;
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
+}
+
+.sofas-card-section-two {
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.sofas-card-section-two .section-two-cost {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sofas-card-section-two p {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    text-align: start !important;
+    padding: 10px 0px;
+}
+
+.section-two-stars {
+    display: flex;
+    gap: 3px;
+    padding-bottom: 20px;
+}
+
+.section-two-stars i {
+    font-size: 18px;
+    color: #F3B541;
+}
+
+.sofas-card-section-two button {
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    cursor: pointer;
+}
+
+.section-two-cost h4 {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section-two-cost span {
+    font-weight: bold;
+    font-size: 22px;
+    color: #842C68;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*  */

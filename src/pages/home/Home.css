@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+/* HOME CONTENT */
+
+.back-video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.hero-content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero-content p {
+    width: 800px;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero-content button {
+    background-color: #842C68;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: .5s;
+}
+
+.hero-content button:active {
+    scale: .9;
+}
+
+
+/* MAIN CONTENT */
+
+.home-main {
+    width: 100%;
+}
+
+/* CADRS */
+
+.card-title {
+    display: flex;
+    padding-left: 50px;
+}
+
+.card-title h1 {
+    font-size: 48px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    padding: 50px 0;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.cards .card {
+    width: 620px;
+    height: 521px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cards .card h3 {
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #000000;
+}
+
+.cards .card a {
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.cards .card-two {
+    width: 400px;
+    height: 647px;
+}
+
+.cards .card-two p {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    font-weight: 400;
+}
+
+/* ACTION */
+
+.action {
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+.action .section-one {
+    width: 840px;
+    height: 724px;
+}
+
+.action .section-two {
+    width: 440px;
+    height: 724px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+}
+
+.action .section-two h1,
+h2 {
+    font-size: 48px;
+    font-weight: 500;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section-two h2 {
+    color: #842C68;
+}
