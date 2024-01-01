@@ -58,7 +58,7 @@ nav .container {
 
 .navbar-socials i {
     color: #fff;
-    font-size: 18px;
+    font-size: 22px;
     cursor: pointer;
     transition: .5s;
 }
@@ -66,4 +66,16 @@ nav .container {
 .navbar-socials i:active {
     scale: 0.9;
     color: orange;
+}
+
+.navbar-socials span:nth-child(2) {
+    padding: 2px 8px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    position: relative;
+    top: -10px;
+    left: -30px;
+    font-size: 16px;
 }

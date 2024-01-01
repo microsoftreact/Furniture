@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+.cardModal {
+    width: 100%;
+    min-height: 80vh;
+    padding-top: 150px;
+}
+
+.cardModal .modal {
+    width: 100%;
+    min-height: 15vh;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal .card-img {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.modal .card-img img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid red;
+    object-fit: cover;
+}
+
+.modal .card-img p {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.modal .btn-algorithm {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.modal .btn-algorithm span {
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.modal .btn-algorithm button {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    color: rgb(93, 90, 90);
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    transition: .5s;
+    outline: none;
+}
+
+.modal .btn-algorithm button:active {
+    scale: 0.9;
+}
+
+.btn-remove {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.btn-remove span {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-remove button {
+    padding: 6px 30px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: .5s;
+    font-size: 18px;
+    outline: none;
+}
+
+.btn-remove button:active {
+    scale: 0.9;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.total span {
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+}

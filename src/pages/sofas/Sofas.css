@@ -116,11 +116,16 @@
 
 .sofas-card-section-two button {
     padding: 8px 20px;
+}
+
+.sofas-card-section-two button a {
+
     font-size: 14px;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
     color: #000000;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .section-two-cost h4 {

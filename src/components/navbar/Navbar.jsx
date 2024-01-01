@@ -4,6 +4,7 @@ import "./Navbar.css";
 
 function Navbar() {
   const [scroll, setScroll] = useState(false);
+  const [openShop, setOpenShop] = useState(false);
 
   const handleScroll = () => {
     if (window.scrollY > 100) {
@@ -29,28 +30,30 @@ function Navbar() {
               <img src="navbarImg/green.png" alt="" />
               <img src="navbarImg/purple.png" alt="" />
             </div>
-            <h2>Maynooth</h2>
+            <NavLink to={"/"}>
+              <h2>Maynooth</h2>
+            </NavLink>
           </div>
           <div className="navbar-links">
             <ul>
               <li>
-                <NavLink to={"/"}>Bedroom</NavLink>
+                <NavLink to={"/"}>Home</NavLink>
               </li>
               <li>
                 <NavLink to={"/livingroom"}>Living Room</NavLink>
               </li>
               <li>
-                <NavLink to={"/"}>Kitchen & Dining</NavLink>
-              </li>
-              <li>
-                <NavLink to={"/"}>Contact</NavLink>
+                <NavLink to={"/contact"}>Contact</NavLink>
               </li>
             </ul>
           </div>
           <div className="navbar-socials">
-            <i className="fa-solid fa-cart-shopping"></i>
-            <i className="fa-solid fa-user"></i>
-            <i className="fa-solid fa-magnifying-glass"></i>
+            <span>
+              <NavLink to={"/modal"}>
+                <i className="fa-solid fa-cart-shopping"></i>
+              </NavLink>
+            </span>
+            <span>0</span>
           </div>
         </div>
       </div>

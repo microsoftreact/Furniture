@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Sofas.css";
+import { NavLink } from "react-router-dom";
 
 function Sofas({ data }) {
   useEffect(() => {
@@ -20,7 +21,7 @@ function Sofas({ data }) {
   };
 
   const filterProduct = data.filter(
-    (item) => item.price >= minPrice && item.price <= maxPrice
+    (info) => info.price >= minPrice && info.price <= maxPrice
   );
 
   return (
@@ -42,7 +43,7 @@ function Sofas({ data }) {
                   ${minPrice}-${maxPrice}
                 </label>
                 <input
-                className="range"
+                  className="range"
                   type="range"
                   min="0"
                   max="2000"
@@ -55,7 +56,7 @@ function Sofas({ data }) {
             <div className="sofas-cards">
               {filterProduct.map((res, index) => {
                 return (
-                  <div className="sofas-card" key={index}>
+                  <div className="sofas-card">
                     <div className="sofas-card-section-one">
                       <img src={res.image} alt="" />
                     </div>
@@ -72,7 +73,13 @@ function Sofas({ data }) {
                         <i className={res.halfrating}></i>
                         <i className="fa-regular fa-star"></i>
                       </div>
-                      <button>Choose options</button>
+                      <button
+                        onClick={() => {
+                          alert(res.price);
+                        }}
+                      >
+                        Choose options
+                      </button>
                     </div>
                   </div>
                 );

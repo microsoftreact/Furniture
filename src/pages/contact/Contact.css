@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+.contact-hero {
+    padding-top: 120px;
+}
+
+.contact-hero .contact-title {
+    font-size: 48px;
+    text-align: center;
+    padding-bottom: 80px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.contact-hero .contact-title span {
+    color: orange;
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-information {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-information .phone,
+.contact-information .email,
+.contact-information .address {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-information .phone i,
+.contact-information .email i,
+.contact-information .address i {
+    font-size: 20px;
+    color: orange;
+}
+
+.contact-information .phone a,
+.contact-information .email a,
+.contact-information .address a {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(93, 89, 89);
+}
+
+.contact-information .socials {
+    display: flex;
+    padding-top: 50px;
+    gap: 25px;
+}
+
+.contact-information .socials a {
+    font-size: 24px;
+    color: blue;
+}
+
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}

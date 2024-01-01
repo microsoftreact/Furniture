@@ -5,10 +5,16 @@ import Home from "./pages/home/Home";
 import Footer from "./components/footer/Footer";
 import LivingRoom from "./pages/livingroom/LivingRoom";
 import Sofas from "./pages/sofas/Sofas";
+import Modal from "./pages/modal/Modal";
+import Contact from "./pages/contact/Contact";
 
 function App() {
+  // DATABASE
+
   const [data, setData] = useState([
     {
+      id: "1",
+      amount: "1",
       name: "Comfort",
       text: "green 2-Seater velvet sofa",
       price: 299,
@@ -17,6 +23,8 @@ function App() {
       halfrating: "fa-regular fa-star-half-stroke",
     },
     {
+      id: "2",
+      amount: "1",
       name: "Ancient",
       text: "green 2-Seater velvet sofa",
       price: 159,
@@ -24,6 +32,8 @@ function App() {
       rating: "fa-solid fa-star",
     },
     {
+      id: "3",
+      amount: "1",
       name: "Special",
       text: "green 2-Seater velvet sofa",
       price: 499,
@@ -32,6 +42,8 @@ function App() {
       halfrating: "fa-regular fa-star-half-stroke",
     },
     {
+      id: "4",
+      amount: "1",
       name: "Ancient",
       text: "green 2-Seater velvet sofa",
       price: 399,
@@ -39,6 +51,8 @@ function App() {
       rating: "fa-solid fa-star",
     },
     {
+      id: "5",
+      amount: "1",
       name: "Sassy",
       text: "green 2-Seater velvet sofa",
       price: 199,
@@ -46,6 +60,8 @@ function App() {
       halfrating: "fa-regular fa-star-half-stroke",
     },
     {
+      id: "6",
+      amount: "1",
       name: "Sunny",
       text: "green 2-Seater velvet sofa",
       price: 299,
@@ -53,6 +69,8 @@ function App() {
       rating: "fa-solid fa-star",
     },
     {
+      id: "7",
+      amount: "1",
       name: "Comfort",
       text: "green 2-Seater velvet sofa",
       price: 499,
@@ -60,6 +78,8 @@ function App() {
       rating: "fa-solid fa-star",
     },
     {
+      id: "8",
+      amount: "1",
       name: "Special",
       text: "green 2-Seater velvet sofa",
       price: 400,
@@ -68,6 +88,8 @@ function App() {
       rating: "fa-solid fa-star",
     },
     {
+      id: "9",
+      amount: "1",
       name: "Classy",
       text: "green 2-Seater velvet sofa",
       price: 699,
@@ -75,6 +97,8 @@ function App() {
       rating: "fa-solid fa-star",
     },
     {
+      id: "10",
+      amount: "1",
       name: "Ancient",
       text: "green 2-Seater velvet sofa",
       price: 299,
@@ -83,6 +107,8 @@ function App() {
       rating: "fa-solid fa-star",
     },
     {
+      id: "11",
+      amount: "1",
       name: "Classy",
       text: "green 2-Seater velvet sofa",
       price: 150,
@@ -90,6 +116,8 @@ function App() {
       halfrating: "fa-regular fa-star-half-stroke",
     },
     {
+      id: "12",
+      amount: "1",
       name: "Comfort",
       text: "green 2-Seater velvet sofa",
       price: 250,
@@ -98,6 +126,8 @@ function App() {
       rating: "fa-solid fa-star",
     },
     {
+      id: "13",
+      amount: "1",
       name: "Ancient",
       text: "green 2-Seater velvet sofa",
       price: 299,
@@ -106,6 +136,8 @@ function App() {
       halfrating: "fa-regular fa-star-half-stroke",
     },
     {
+      id: "14",
+      amount: "1",
       name: "Comfort",
       text: "green 2-Seater velvet sofa",
       price: 359,
@@ -114,6 +146,8 @@ function App() {
       halfrating: "fa-regular fa-star-half-stroke",
     },
     {
+      id: "15",
+      amount: "1",
       name: "Sassy",
       text: "green 2-Seater velvet sofa",
       price: 449,
@@ -121,6 +155,8 @@ function App() {
       rating: "fa-solid fa-star",
     },
     {
+      id: "16",
+      amount: "1",
       name: "Comfort",
       text: "green 2-Seater velvet sofa",
       price: 399,
@@ -129,6 +165,8 @@ function App() {
       rating: "fa-solid fa-star",
     },
     {
+      id: "17",
+      amount: "1",
       name: "Seater",
       text: "green 2-Seater velvet sofa",
       price: 199,
@@ -136,6 +174,8 @@ function App() {
       halfrating: "fa-regular fa-star-half-stroke",
     },
     {
+      id: "18",
+      amount: "1",
       name: "Classy",
       text: "green 2-Seater velvet sofa",
       price: 269,
@@ -143,6 +183,8 @@ function App() {
       rating: "fa-solid fa-star",
     },
     {
+      id: "19",
+      amount: "1",
       name: "Seater",
       text: "green 2-Seater velvet sofa",
       price: 499,
@@ -151,6 +193,8 @@ function App() {
       halfrating: "fa-regular fa-star-half-stroke",
     },
     {
+      id: "20",
+      amount: "1",
       name: "Classy",
       text: "green 2-Seater velvet sofa",
       price: 1342,
@@ -159,6 +203,8 @@ function App() {
       halfrating: "fa-regular fa-star-half-stroke",
     },
     {
+      id: "21",
+      amount: "1",
       name: "Sassy",
       text: "green 2-Seater velvet sofa",
       price: 1500,
@@ -167,6 +213,8 @@ function App() {
       halfrating: "fa-regular fa-star-half-stroke",
     },
     {
+      id: "22",
+      amount: "1",
       name: "Ancient",
       text: "green 2-Seater velvet sofa",
       price: 1110,
@@ -175,6 +223,8 @@ function App() {
       halfrating: "fa-regular fa-star-half-stroke",
     },
     {
+      id: "23",
+      amount: "1",
       name: "Comfort",
       text: "green 2-Seater velvet sofa",
       price: 1023,
@@ -183,6 +233,8 @@ function App() {
       halfrating: "fa-regular fa-star-half-stroke",
     },
     {
+      id: "24",
+      amount: "1",
       name: "Classy",
       text: "green 2-Seater velvet sofa",
       price: 943,
@@ -191,6 +243,8 @@ function App() {
       halfrating: "fa-regular fa-star-half-stroke",
     },
     {
+      id: "25",
+      amount: "1",
       name: "Seater",
       text: "green 2-Seater velvet sofa",
       price: 745,
@@ -199,6 +253,8 @@ function App() {
       halfrating: "fa-regular fa-star-half-stroke",
     },
     {
+      id: "26",
+      amount: "1",
       name: "Special",
       text: "green 2-Seater velvet sofa",
       price: 235,
@@ -206,6 +262,8 @@ function App() {
       halfrating: "fa-regular fa-star-half-stroke",
     },
     {
+      id: "27",
+      amount: "1",
       name: "Ancient",
       text: "green 2-Seater velvet sofa",
       price: 249,
@@ -213,6 +271,8 @@ function App() {
       rating: "fa-solid fa-star",
     },
     {
+      id: "28",
+      amount: "1",
       name: "Special",
       text: "green 2-Seater velvet sofa",
       price: 400,
@@ -221,6 +281,8 @@ function App() {
       halfrating: "fa-regular fa-star-half-stroke",
     },
     {
+      id: "29",
+      amount: "1",
       name: "Comfort",
       text: "green 2-Seater velvet sofa",
       price: 539,
@@ -229,6 +291,8 @@ function App() {
       halfrating: "fa-regular fa-star-half-stroke",
     },
     {
+      id: "30",
+      amount: "1",
       name: "Seater",
       text: "green 2-Seater velvet sofa",
       price: 799,
@@ -237,6 +301,8 @@ function App() {
       halfrating: "fa-regular fa-star-half-stroke",
     },
     {
+      id: "31",
+      amount: "1",
       name: "Classy",
       text: "green 2-Seater velvet sofa",
       price: 220,
@@ -244,6 +310,8 @@ function App() {
       halfrating: "fa-regular fa-star-half-stroke",
     },
     {
+      id: "32",
+      amount: "1",
       name: "Comfort",
       text: "green 2-Seater velvet sofa",
       price: 506,
@@ -252,6 +320,8 @@ function App() {
       halfrating: "fa-regular fa-star-half-stroke",
     },
     {
+      id: "33",
+      amount: "1",
       name: "Special",
       text: "green 2-Seater velvet sofa",
       price: 305,
@@ -259,6 +329,7 @@ function App() {
       rating: "fa-solid fa-star",
     },
   ]);
+
   return (
     <BrowserRouter>
       <Navbar />
@@ -266,6 +337,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/livingroom" element={<LivingRoom />} />
         <Route path="/sofas" element={<Sofas data={data} />} />
+        <Route path="/modal" element={<Modal data={data} />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </BrowserRouter>
