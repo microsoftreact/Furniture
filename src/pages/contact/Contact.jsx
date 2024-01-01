@@ -44,14 +44,20 @@ function Contact() {
                 </NavLink>
               </div>
             </div>
-            <div className="contact-form">
+            <form className="contact-form">
               <input type="text" placeholder="FirstName..." />
               <input type="text" placeholder="LastName..." />
               <input type="email" placeholder="Email..." />
               <input type="password" placeholder="Password..." />
-              <textarea name="" id="" cols="30" rows="10"></textarea>
-              <button>Send</button>
-            </div>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Please fill in this space..."
+              ></textarea>
+              <button type="button">Send</button>
+            </form>
           </div>
         </div>
       </div>
