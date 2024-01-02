@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Sofas.css";
 import { NavLink } from "react-router-dom";
 
-function Sofas({ data }) {
+function Sofas({card, setCard, data }) {
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -23,6 +23,13 @@ function Sofas({ data }) {
   const filterProduct = data.filter(
     (info) => info.price >= minPrice && info.price <= maxPrice
   );
+
+  const addCard = (id)=>{
+    const product = filterProduct.filter((item)=>{
+      return item.id == id
+    })
+    setCard([...card, product[0]])
+  }
 
   return (
     <main>
@@ -55,6 +62,7 @@ function Sofas({ data }) {
             </div>
             <div className="sofas-cards">
               {filterProduct.map((res, index) => {
+               
                 return (
                   <div className="sofas-card">
                     <div className="sofas-card-section-one">
@@ -75,7 +83,7 @@ function Sofas({ data }) {
                       </div>
                       <button
                         onClick={() => {
-                          alert(res.price);
+                          addCard(res.id);
                         }}
                       >
                         Choose options

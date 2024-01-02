@@ -330,14 +330,20 @@ function App() {
     },
   ]);
 
+  const [card, setCard] = useState([])
+  console.log(card);  
+
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/livingroom" element={<LivingRoom />} />
-        <Route path="/sofas" element={<Sofas data={data} />} />
-        <Route path="/modal" element={<Modal data={data} />} />
+        <Route
+          path="/sofas"
+          element={<Sofas card={card} setCard={setCard} data={data} />}
+        />
+        <Route path="/modal" element={<Modal card={card} data={data} />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />

@@ -18,7 +18,6 @@ function Navbar() {
   const location = useLocation();
 
   const currentPath = location.pathname;
-  console.log(currentPath);
   return (
     <nav>
       <div className={scroll ? "navbar active" : "navbar"}>
