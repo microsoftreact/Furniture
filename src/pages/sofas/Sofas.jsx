@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Sofas.css";
 import { NavLink } from "react-router-dom";
 
-function Sofas({card, setCard, data }) {
+function Sofas({ card, setCard, data }) {
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -24,12 +24,12 @@ function Sofas({card, setCard, data }) {
     (info) => info.price >= minPrice && info.price <= maxPrice
   );
 
-  const addCard = (id)=>{
-    const product = filterProduct.filter((item)=>{
-      return item.id == id
-    })
-    setCard([...card, product[0]])
-  }
+  const addCard = (id) => {
+    const product = filterProduct.filter((productitem) => {
+      return productitem.id == id;
+    });
+    setCard([...card, product[0]]);
+  };
 
   return (
     <main>
@@ -62,7 +62,6 @@ function Sofas({card, setCard, data }) {
             </div>
             <div className="sofas-cards">
               {filterProduct.map((res, index) => {
-               
                 return (
                   <div className="sofas-card">
                     <div className="sofas-card-section-one">

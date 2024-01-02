@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Modal.css";
 
-function Modal({card,  data }) {
+function Modal({ card, setCard, handleChange }) {
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -9,34 +9,62 @@ function Modal({card,  data }) {
     });
   });
 
-  var total = 0
+  const [price, setPrice] = useState(0);
+  const handlePrice = () => {
+    let ans = 0;
+    card.map((item) => {
+      ans += item.amount * item.price;
+    });
+    setPrice(ans);
+  };
+
+  const handleRemove = (id) => {
+    const arr = card.filter((item) => item.id !== id);
+    setCard(arr);
+    item = "";
+  };
+
+  useEffect(() => {
+    handlePrice();
+  });
+
   return (
     <div className="cardModal">
       <div className="container">
         {card.map((item) => {
-          total += item.price;
-
           return (
-            <div className="modal">
+            <div className="modal" key={item.id}>
               <div className="card-img">
-                <img src="" alt="Bu yerda rasm bor" />
-                <p>Lorem ipsum resta</p>
+                <img src={item.image} alt="Bu yerda rasm bor" />
+                <p>{item.name}</p>
               </div>
               <div className="btn-algorithm">
-                <button>+</button>
-                <span>10</span>
-                <button>-</button>
+                <button
+                  onClick={() => {
+                    handleChange(item, +1);
+                  }}
+                >
+                  +
+                </button>
+                <span>{item.amount}</span>
+                <button
+                  onClick={() => {
+                    handleChange(item, -1);
+                  }}
+                >
+                  -
+                </button>
               </div>
               <div className="btn-remove">
-                <span>500</span>
-                <button>Remove</button>
+                <span>${item.price}</span>
+                <button onClick={() => handleRemove(item.id)}>Remove</button>
               </div>
             </div>
           );
         })}
         <div className="total">
           <span>Total Price of your Card</span>
-          <span>${total}</span>
+          <span>${price}</span>
         </div>
       </div>
     </div>

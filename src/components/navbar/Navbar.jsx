@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
-function Navbar() {
+function Navbar({ size }) {
   const [scroll, setScroll] = useState(false);
 
   const handleScroll = () => {
@@ -51,7 +51,7 @@ function Navbar() {
                 <i className="fa-solid fa-cart-shopping"></i>
               </NavLink>
             </span>
-            <span>0</span>
+            <span>{size}</span>
           </div>
         </div>
       </div>

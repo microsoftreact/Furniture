@@ -329,13 +329,23 @@ function App() {
       rating: "fa-solid fa-star",
     },
   ]);
+  const [card, setCard] = useState([]);
 
-  const [card, setCard] = useState([])
-  console.log(card);  
+  const handleChange = (item, d) => {
+    let ind = -1;
+    card.forEach((data, index) => {
+      if (data.id === item.id) ind = index;
+    });
+    const tempArr = card;
+    tempArr[ind].amount += d;
+
+    if (tempArr[ind].amount === 0) tempArr[ind].amount = 1;
+    setCard([...tempArr]);
+  };
 
   return (
     <BrowserRouter>
-      <Navbar />
+      <Navbar size={card.length} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/livingroom" element={<LivingRoom />} />
@@ -343,7 +353,17 @@ function App() {
           path="/sofas"
           element={<Sofas card={card} setCard={setCard} data={data} />}
         />
-        <Route path="/modal" element={<Modal card={card} data={data} />} />
+        <Route
+          path="/modal"
+          element={
+            <Modal
+              card={card}
+              setCard={setCard}
+              data={data}
+              handleChange={handleChange}
+            />
+          }
+        />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
