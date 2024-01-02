@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Modal.css";
 
 function Modal({ data }) {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
   return (
     <div className="cardModal">
       <div className="container">

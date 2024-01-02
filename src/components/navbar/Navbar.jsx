@@ -4,7 +4,6 @@ import "./Navbar.css";
 
 function Navbar() {
   const [scroll, setScroll] = useState(false);
-  const [openShop, setOpenShop] = useState(false);
 
   const handleScroll = () => {
     if (window.scrollY > 100) {
