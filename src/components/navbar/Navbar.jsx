@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
-function Navbar({ size }) {
+function Navbar({ size, modal, setModal }) {
   const [scroll, setScroll] = useState(false);
 
   const handleScroll = () => {
@@ -29,22 +29,35 @@ function Navbar({ size }) {
             </NavLink>
           </div>
           <div className="navbar-links">
-            <ul>
-              <li>
-                <NavLink to={"/"}>Home</NavLink>
-              </li>
-              <li>
-                <NavLink to={"/livingroom"}>Living Room</NavLink>
-              </li>
-              <li>
-                <NavLink to={"/contact"}>Contact</NavLink>
-              </li>
-            </ul>
+            <div className={modal ? "modal hidden" : "modal"}>
+              <i
+                className="fas fa-close"
+                onClick={() => {
+                  setModal(true);
+                }}
+              ></i>
+              <ul>
+                <li>
+                  <NavLink to={"/"}>Home</NavLink>
+                </li>
+                <li>
+                  <NavLink to={"/livingroom"}>Living Room</NavLink>
+                </li>
+                <li>
+                  <NavLink to={"/contact"}>Contact</NavLink>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="navbar-socials">
             <span className="navbar-socials-item">
+              <i
+                className="fa-solid fa-bars"
+                onClick={() => {
+                  setModal(false);
+                }}
+              ></i>
               <NavLink to={"/modal"}>
-                <i className="fa-solid fa-bars"></i>
                 <i className="fa-solid fa-cart-shopping"></i>
               </NavLink>
             </span>

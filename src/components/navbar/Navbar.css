@@ -86,6 +86,10 @@ nav .navbar-socials .navbar-socials-item .fa-bars {
     font-family: 'Roboto', sans-serif;
 }
 
+.navbar-links .modal i {
+    display: none;
+}
+
 @media (max-width:480px) {
 
     nav .navbar {
@@ -146,7 +150,37 @@ nav .navbar-socials .navbar-socials-item .fa-bars {
         font-size: 24px;
     }
 
-    .navbar-links {
+    .navbar-links .modal {
+        width: 250px;
+        height: 200px;
+        background-color: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(5px);
+        border-radius: 12px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 40px;
+        top: 50px;
+    }
+
+    .navbar-links .modal.hidden {
         display: none;
+    }
+
+    .navbar-links .modal ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .navbar-links .modal i {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
     }
 }

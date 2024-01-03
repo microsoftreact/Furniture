@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Sofas.css";
 import { NavLink } from "react-router-dom";
 
-function Sofas({ card, setCard, data }) {
+function Sofas({ card, setCard, data, setModal }) {
   useEffect(() => {
     window.scrollTo({
       top: 0,

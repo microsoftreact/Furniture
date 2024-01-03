@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./LivingRoom.css";
 import Slider from "../slider/Slider";
 
-function LivingRoom() {
+function LivingRoom({ setModal }) {
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -11,7 +11,11 @@ function LivingRoom() {
     });
   });
   return (
-    <main>
+    <main
+      onLoad={() => {
+        setModal(false);
+      }}
+    >
       <div className="livingroom-hero">
         <video
           autoPlay

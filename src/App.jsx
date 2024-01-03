@@ -330,6 +330,8 @@ function App() {
     },
   ]);
 
+  const [modal, setModal] = useState(true);
+
   const [card, setCard] = useState([]);
 
   const handleChange = (item, d) => {
@@ -349,13 +351,24 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Navbar size={card.length} />
+      <Navbar size={card.length} modal={modal} setModal={setModal} />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/livingroom" element={<LivingRoom />} />
+        <Route path="/" element={<Home />} setModal={setModal} />
+        <Route
+          path="/livingroom"
+          element={<LivingRoom />}
+          setModal={setModal}
+        />
         <Route
           path="/sofas"
-          element={<Sofas card={card} setCard={setCard} data={data} />}
+          element={
+            <Sofas
+              card={card}
+              setCard={setCard}
+              data={data}
+              setModal={setModal}
+            />
+          }
         />
         <Route
           path="/modal"
@@ -365,6 +378,7 @@ function App() {
               setCard={setCard}
               data={data}
               handleChange={handleChange}
+              setModal={setModal}
             />
           }
         />
