@@ -25,9 +25,9 @@ function Sofas({ card, setCard, data }) {
   );
 
   const addCard = (id) => {
-    const product = filterProduct.filter((productitem) => {
-      return productitem.id == id;
-    });
+    const product = filterProduct.filter(
+      (productitem) => productitem.id === id
+    );
     setCard([...card, product[0]]);
   };
 

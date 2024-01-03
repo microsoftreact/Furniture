@@ -10,6 +10,7 @@ function Modal({ card, setCard, handleChange }) {
   });
 
   const [price, setPrice] = useState(0);
+
   const handlePrice = () => {
     let ans = 0;
     card.map((item) => {

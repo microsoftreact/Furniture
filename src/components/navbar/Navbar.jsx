@@ -12,12 +12,8 @@ function Navbar({ size }) {
       setScroll(false);
     }
   };
-  // Eventni qo'shish
   window.addEventListener("scroll", handleScroll);
 
-  const location = useLocation();
-
-  const currentPath = location.pathname;
   return (
     <nav>
       <div className={scroll ? "navbar active" : "navbar"}>
@@ -46,8 +42,9 @@ function Navbar({ size }) {
             </ul>
           </div>
           <div className="navbar-socials">
-            <span>
+            <span className="navbar-socials-item">
               <NavLink to={"/modal"}>
+                <i className="fa-solid fa-bars"></i>
                 <i className="fa-solid fa-cart-shopping"></i>
               </NavLink>
             </span>

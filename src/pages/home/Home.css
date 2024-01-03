@@ -151,3 +151,39 @@ h2 {
 .section-two h2 {
     color: #842C68;
 }
+
+@media (max-width:480px) {
+
+    .home-hero {
+        width: 100%;
+    }
+
+    .back-video {
+        top: 0;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+        margin-top: 50px;
+    }
+
+    .action {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .section-one {
+        width: 100% !important;
+    }
+
+    .section-one img {
+        width: 100%;
+    }
+}

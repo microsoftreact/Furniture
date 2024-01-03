@@ -14,7 +14,7 @@ function App() {
   const [data, setData] = useState([
     {
       id: "1",
-      amount: "1",
+      amount: 1,
       name: "Comfort",
       text: "green 2-Seater velvet sofa",
       price: 299,
@@ -24,7 +24,7 @@ function App() {
     },
     {
       id: "2",
-      amount: "1",
+      amount: 1,
       name: "Ancient",
       text: "green 2-Seater velvet sofa",
       price: 159,
@@ -33,7 +33,7 @@ function App() {
     },
     {
       id: "3",
-      amount: "1",
+      amount: 1,
       name: "Special",
       text: "green 2-Seater velvet sofa",
       price: 499,
@@ -43,7 +43,7 @@ function App() {
     },
     {
       id: "4",
-      amount: "1",
+      amount: 1,
       name: "Ancient",
       text: "green 2-Seater velvet sofa",
       price: 399,
@@ -52,7 +52,7 @@ function App() {
     },
     {
       id: "5",
-      amount: "1",
+      amount: 1,
       name: "Sassy",
       text: "green 2-Seater velvet sofa",
       price: 199,
@@ -61,7 +61,7 @@ function App() {
     },
     {
       id: "6",
-      amount: "1",
+      amount: 1,
       name: "Sunny",
       text: "green 2-Seater velvet sofa",
       price: 299,
@@ -70,7 +70,7 @@ function App() {
     },
     {
       id: "7",
-      amount: "1",
+      amount: 1,
       name: "Comfort",
       text: "green 2-Seater velvet sofa",
       price: 499,
@@ -79,7 +79,7 @@ function App() {
     },
     {
       id: "8",
-      amount: "1",
+      amount: 1,
       name: "Special",
       text: "green 2-Seater velvet sofa",
       price: 400,
@@ -89,7 +89,7 @@ function App() {
     },
     {
       id: "9",
-      amount: "1",
+      amount: 1,
       name: "Classy",
       text: "green 2-Seater velvet sofa",
       price: 699,
@@ -98,7 +98,7 @@ function App() {
     },
     {
       id: "10",
-      amount: "1",
+      amount: 1,
       name: "Ancient",
       text: "green 2-Seater velvet sofa",
       price: 299,
@@ -108,7 +108,7 @@ function App() {
     },
     {
       id: "11",
-      amount: "1",
+      amount: 1,
       name: "Classy",
       text: "green 2-Seater velvet sofa",
       price: 150,
@@ -117,7 +117,7 @@ function App() {
     },
     {
       id: "12",
-      amount: "1",
+      amount: 1,
       name: "Comfort",
       text: "green 2-Seater velvet sofa",
       price: 250,
@@ -127,7 +127,7 @@ function App() {
     },
     {
       id: "13",
-      amount: "1",
+      amount: 1,
       name: "Ancient",
       text: "green 2-Seater velvet sofa",
       price: 299,
@@ -137,7 +137,7 @@ function App() {
     },
     {
       id: "14",
-      amount: "1",
+      amount: 1,
       name: "Comfort",
       text: "green 2-Seater velvet sofa",
       price: 359,
@@ -147,7 +147,7 @@ function App() {
     },
     {
       id: "15",
-      amount: "1",
+      amount: 1,
       name: "Sassy",
       text: "green 2-Seater velvet sofa",
       price: 449,
@@ -156,7 +156,7 @@ function App() {
     },
     {
       id: "16",
-      amount: "1",
+      amount: 1,
       name: "Comfort",
       text: "green 2-Seater velvet sofa",
       price: 399,
@@ -166,7 +166,7 @@ function App() {
     },
     {
       id: "17",
-      amount: "1",
+      amount: 1,
       name: "Seater",
       text: "green 2-Seater velvet sofa",
       price: 199,
@@ -175,7 +175,7 @@ function App() {
     },
     {
       id: "18",
-      amount: "1",
+      amount: 1,
       name: "Classy",
       text: "green 2-Seater velvet sofa",
       price: 269,
@@ -184,7 +184,7 @@ function App() {
     },
     {
       id: "19",
-      amount: "1",
+      amount: 1,
       name: "Seater",
       text: "green 2-Seater velvet sofa",
       price: 499,
@@ -194,7 +194,7 @@ function App() {
     },
     {
       id: "20",
-      amount: "1",
+      amount: 1,
       name: "Classy",
       text: "green 2-Seater velvet sofa",
       price: 1342,
@@ -204,7 +204,7 @@ function App() {
     },
     {
       id: "21",
-      amount: "1",
+      amount: 1,
       name: "Sassy",
       text: "green 2-Seater velvet sofa",
       price: 1500,
@@ -214,7 +214,7 @@ function App() {
     },
     {
       id: "22",
-      amount: "1",
+      amount: 1,
       name: "Ancient",
       text: "green 2-Seater velvet sofa",
       price: 1110,
@@ -224,7 +224,7 @@ function App() {
     },
     {
       id: "23",
-      amount: "1",
+      amount: 1,
       name: "Comfort",
       text: "green 2-Seater velvet sofa",
       price: 1023,
@@ -234,7 +234,7 @@ function App() {
     },
     {
       id: "24",
-      amount: "1",
+      amount: 1,
       name: "Classy",
       text: "green 2-Seater velvet sofa",
       price: 943,
@@ -244,7 +244,7 @@ function App() {
     },
     {
       id: "25",
-      amount: "1",
+      amount: 1,
       name: "Seater",
       text: "green 2-Seater velvet sofa",
       price: 745,
@@ -254,7 +254,7 @@ function App() {
     },
     {
       id: "26",
-      amount: "1",
+      amount: 1,
       name: "Special",
       text: "green 2-Seater velvet sofa",
       price: 235,
@@ -263,7 +263,7 @@ function App() {
     },
     {
       id: "27",
-      amount: "1",
+      amount: 1,
       name: "Ancient",
       text: "green 2-Seater velvet sofa",
       price: 249,
@@ -272,7 +272,7 @@ function App() {
     },
     {
       id: "28",
-      amount: "1",
+      amount: 1,
       name: "Special",
       text: "green 2-Seater velvet sofa",
       price: 400,
@@ -282,7 +282,7 @@ function App() {
     },
     {
       id: "29",
-      amount: "1",
+      amount: 1,
       name: "Comfort",
       text: "green 2-Seater velvet sofa",
       price: 539,
@@ -292,7 +292,7 @@ function App() {
     },
     {
       id: "30",
-      amount: "1",
+      amount: 1,
       name: "Seater",
       text: "green 2-Seater velvet sofa",
       price: 799,
@@ -302,7 +302,7 @@ function App() {
     },
     {
       id: "31",
-      amount: "1",
+      amount: 1,
       name: "Classy",
       text: "green 2-Seater velvet sofa",
       price: 220,
@@ -311,7 +311,7 @@ function App() {
     },
     {
       id: "32",
-      amount: "1",
+      amount: 1,
       name: "Comfort",
       text: "green 2-Seater velvet sofa",
       price: 506,
@@ -321,7 +321,7 @@ function App() {
     },
     {
       id: "33",
-      amount: "1",
+      amount: 1,
       name: "Special",
       text: "green 2-Seater velvet sofa",
       price: 305,
@@ -329,6 +329,7 @@ function App() {
       rating: "fa-solid fa-star",
     },
   ]);
+
   const [card, setCard] = useState([]);
 
   const handleChange = (item, d) => {
@@ -339,7 +340,10 @@ function App() {
     const tempArr = card;
     tempArr[ind].amount += d;
 
-    if (tempArr[ind].amount === 0) tempArr[ind].amount = 1;
+    if (tempArr[ind].amount === 0) {
+      tempArr[ind].amount = 1;
+    }
+
     setCard([...tempArr]);
   };
 
