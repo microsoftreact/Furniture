@@ -67,6 +67,7 @@ footer .footer {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
     font-weight: 300;
+    text-align: center;
 }
 
 @media (max-width:480px) {
