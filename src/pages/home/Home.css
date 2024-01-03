@@ -158,32 +158,133 @@ h2 {
         width: 100%;
     }
 
+    .home-hero .container {
+        width: 100%;
+        padding: 0px 40px;
+    }
+
     .back-video {
-        top: 0;
+        top: 60px;
     }
 
     .hero-content {
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: start;
+        padding-top: 80px;
+        gap: 20px;
     }
 
     .hero-content h1 {
-        font-size: 34px;
-        margin-top: 50px;
+        font-size: 24px;
+    }
+
+    .hero-content p {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .hero-content button {
+        font-size: 10px;
+        width: 100px;
+        height: 30px;
+    }
+
+    .home-main {
+        padding-top: 50px;
+    }
+
+    .card-title {
+        padding-left: 0;
+    }
+
+    .card-title h1 {
+        width: 100%;
+        font-size: 22px;
+        padding: 50px 40px;
+        text-align: center;
+    }
+
+    .cards {
+        width: 100%;
+        height: auto;
+    }
+
+    .cards .card {
+        width: 420px;
+        height: 300px;
+        gap: 10px;
+        padding: 0px 40px;
+    }
+
+    .cards .card img {
+        width: 100%;
+    }
+
+    .cards .card h3 {
+        font-size: 20px;
+    }
+
+    .cards .card a {
+        font-size: 16px;
+    }
+
+    .cards-two {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        gap: 250px;
+        justify-content: space-between;
+    }
+
+    .cards-two .card-two {
+        width: 420px;
+        height: 300px;
+    }
+
+    .cards-two .card-two h3 {
+        font-size: 20px;
+    }
+
+    .cards-two .card-two p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .cards-two .card-two a {
+        font-size: 14px;
     }
 
     .action {
+        width: 100%;
+        height: 600px;
         display: flex;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 60px;
+        margin-top: 200px;
+        padding-top: 0;
         align-items: center;
         flex-direction: column;
     }
 
     .section-one {
-        width: 100% !important;
+        width: 350px !important;
+        padding-top: 50px;
     }
 
     .section-one img {
         width: 100%;
+        object-fit: cover;
+    }
+
+    .section-two {
+        width: 350px !important;
+    }
+
+    .section-two h1,
+    .section-two h2 {
+        font-size: 30px !important;
     }
 }

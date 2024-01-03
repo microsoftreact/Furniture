@@ -65,7 +65,7 @@ function Home() {
             <div className="card-title">
               <h1>Looking for What’s New in Store?</h1>
             </div>
-            <div className="cards">
+            <div className="cards cards-two">
               <div className="card card-two">
                 <img src="cardImg/grey sofa.png" alt="" />
                 <h3>Home for Designer Sectionals</h3>

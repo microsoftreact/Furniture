@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
 
 footer .footer {
+    width: 100%;
     margin-top: 60px;
     padding: 115px 0px 50px 0px;
     background-color: #000000;
@@ -66,4 +67,36 @@ footer .footer {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
     font-weight: 300;
+}
+
+@media (max-width:480px) {
+    footer .footer {
+        width: 100%;
+        padding: 50px 40px;
+    }
+
+    .footer .container {
+        width: 100%;
+        padding: 0px 40px;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px !important;
+    }
+
+    .footer-links .navbar-logo .navbarImg img {
+        width: 15px;
+    }
+
+    .footer-links .navbar-logo h2 {
+        font-size: 20px;
+    }
+
+    .footer-links a {
+        font-size: 20px;
+    }
 }
