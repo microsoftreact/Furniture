@@ -1,15 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Sofas.css";
 import { NavLink } from "react-router-dom";
 
-function Sofas({ card, setCard, data, setModal }) {
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  });
-
+function Sofas({ card, setCard, data }) {
   // FILTER FUNCTION
 
   const [minPrice, setMinPrice] = useState(0);

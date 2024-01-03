@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Modal.css";
 
-function Modal({ card, setCard, handleChange, setModal }) {
+function Modal({ card, setCard, handleChange }) {
   useEffect(() => {
     window.scrollTo({
       top: 0,

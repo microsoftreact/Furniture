@@ -353,22 +353,11 @@ function App() {
     <BrowserRouter>
       <Navbar size={card.length} modal={modal} setModal={setModal} />
       <Routes>
-        <Route path="/" element={<Home />} setModal={setModal} />
-        <Route
-          path="/livingroom"
-          element={<LivingRoom />}
-          setModal={setModal}
-        />
+        <Route path="/" element={<Home />} />
+        <Route path="/livingroom" element={<LivingRoom />} />
         <Route
           path="/sofas"
-          element={
-            <Sofas
-              card={card}
-              setCard={setCard}
-              data={data}
-              setModal={setModal}
-            />
-          }
+          element={<Sofas card={card} setCard={setCard} data={data} />}
         />
         <Route
           path="/modal"
@@ -378,7 +367,6 @@ function App() {
               setCard={setCard}
               data={data}
               handleChange={handleChange}
-              setModal={setModal}
             />
           }
         />

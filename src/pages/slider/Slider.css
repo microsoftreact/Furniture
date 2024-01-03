@@ -88,3 +88,29 @@ html {
     width: 15rem !important;
     bottom: 1rem;
 }
+
+@media (max-width:480px) {
+
+    .slides {
+        height: auto;
+    }
+
+    .swiper_container {
+        height: 35rem;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: auto;
+    }
+
+    .slider-controler .slider-arrow {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .slider-controler .slider-arrow ion-icon {
+        font-size: 18px;
+        color: #222224;
+    }
+}

@@ -54,8 +54,8 @@
 }
 
 .modal .btn-algorithm button {
-    width: 35px;
-    height: 35px;
+    min-width: 35px;
+    min-height: 35px;
     font-size: 18px;
     color: rgb(93, 90, 90);
     cursor: pointer;
@@ -103,4 +103,58 @@
 .total span {
     font-size: 22px;
     font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width:480px) {
+    .cardModal .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0px 40px;
+    }
+
+    .card-img {
+        gap: 15px !important;
+    }
+
+    .card-img img {
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    .card-img p {
+        font-size: 16px !important;
+    }
+
+    .modal .btn-algorithm {
+        gap: 10px !important;
+    }
+
+    .modal .btn-algorithm span {
+        min-width: 20px !important;
+        min-height: 20px !important;
+    }
+
+    .modal .btn-algorithm button {
+        min-width: 20px !important;
+        min-height: 20px !important;
+    }
+
+    .btn-remove {
+        gap: 10px !important;
+    }
+
+    .btn-remove span {
+        font-size: 16px;
+    }
+
+    .btn-remove button {
+        padding: 4px 15px;
+        font-size: 14px;
+    }
+
+    .total span {
+        font-size: 18px;
+    }
 }

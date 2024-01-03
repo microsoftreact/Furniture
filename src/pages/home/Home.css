@@ -164,6 +164,7 @@ h2 {
     }
 
     .back-video {
+        width: 100% !important;
         top: 60px;
     }
 

@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import "./LivingRoom.css";
 import Slider from "../slider/Slider";
+import "./LivingRoom.css";
 
-function LivingRoom({ setModal }) {
+function LivingRoom() {
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -11,11 +11,7 @@ function LivingRoom({ setModal }) {
     });
   });
   return (
-    <main
-      onLoad={() => {
-        setModal(false);
-      }}
-    >
+    <main>
       <div className="livingroom-hero">
         <video
           autoPlay
@@ -99,13 +95,15 @@ function LivingRoom({ setModal }) {
         </div>
 
         {/* LIVINGROOM SLIDER */}
-        <div className="container">
-          <div className="slider-title">
-            <h1>
-              Most Popular on <span>Maynooth</span>
-            </h1>
+        <div className="livingRoom-slider">
+          <div className="container">
+            <div className="slider-title">
+              <h1>
+                Most Popular on <span>Maynooth</span>
+              </h1>
+            </div>
+            <Slider />
           </div>
-          <Slider />
         </div>
       </div>
     </main>

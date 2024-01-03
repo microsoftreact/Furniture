@@ -71,7 +71,8 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    /* border: 1px solid rgba(0, 0, 0, 0.3); */
+    box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.2);
     border-radius: 12px;
     background: linear-gradient(#f5f5f5, #e5e5e5);
 }
@@ -141,4 +142,48 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/*  */
+/* MEDIA QUERIES */
+
+@media (max-width:480px) {
+    .sofas-title-text {
+        font-size: 24px !important;
+    }
+
+    .sofas-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .sofas-filter-menu {
+        border: none;
+    }
+
+    .sofas-filter-menu-title h3 {
+        text-align: center;
+    }
+
+    .sofas-filter-menu-price label {
+        padding-top: 0;
+        color: white;
+    }
+
+    .sofas-filter-menu .sofas-filter-menu-price {
+        width: 200px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    .sofas-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

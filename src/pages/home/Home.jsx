@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./Home.css";
 
-function Home({ setModal }) {
+function Home() {
   useEffect(() => {
     window.scrollTo({
       top: 0,
